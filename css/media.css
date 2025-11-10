@@ -1,0 +1,184 @@
+@media screen and (min-width: 576px){
+    .af_be::after{
+        right: 30%;
+    }
+    .af_be::before{
+        left: 30%;
+    }
+    .my-cardd{
+        width: 94%;
+        margin-inline: 10px;
+    }
+    .smallfont{
+        font-size: 50px;
+    }
+    .rightV{
+        right: -120%;
+    }
+    .rightVv{
+        right: -110%;
+    }
+    .navbord{
+        width: 100%;
+        border: rgba(76, 76, 76, 0.575) solid 1px;
+        margin-bottom: 20px;
+    }
+    .buttonC{
+        padding: 20px;
+    }
+    .medspace{
+        padding-block: 20px;
+    }
+    .navbar-nav .nav-link{
+        padding-block: 15px;
+    }
+    .navbar-nav .nav-item {
+        margin-bottom: 8px;
+    }
+    .textfont{
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .mediumfont{
+        font-size: 70px;
+    }
+    
+    .header-btns{
+        display: flex;
+        gap: 5px;
+    }
+    .af_be::after{
+        right: 35%;
+    }
+    .af_be::before{
+        left: 35%;
+    }
+    .rightV{
+        right: -40%;
+    }
+    .rightVv{
+        right: -30%;
+    }
+    .thirdC,.fouthC,.secondC,.firstC{
+        width: 40%;
+    }
+    .my-cardd{
+        width: 93%;
+    }
+    
+}
+
+@media screen and (min-width: 992px){
+    .inner .text2{
+        padding-block: 55px;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .headS h2{
+        font-size: 50px;
+    }
+    .buttonC{
+        width: 7%;
+    }
+    .header-btns{
+        display: flex;
+        width: 75%;
+    }
+    figure{
+        width: 40%;
+    }
+    .badge{
+        width: 30%;
+    }
+    /* -------------------- */
+    .af_be::after{
+        right: 42%;
+    }
+    .af_be::before{
+        left: 42%;
+    }
+    .carousel-indicators [data-bs-target]{
+        margin-bottom: 0px;
+    }
+    .mybg{
+        border-radius: 100%;
+    }
+    .gamesbtn{
+        width: 25%;
+        position: absolute;
+        right: 37%;
+    }
+    .buttonh{
+        justify-content: space-around;
+    }
+    figcaption h3{
+        font-size: 18px;
+    }
+    .contact-data,.myform{
+        width: 50%;
+    }
+    .firstC{
+        width: 25%;
+    }
+    .secondC,.thirdC,.fouthC{
+        width: 22%;
+        margin-left: 10px;
+    }
+    .text2{
+        padding: 40px;
+    }
+    .my-card{
+        text-align: center;
+    }
+    .my-cardd{
+        width: 96%;
+        margin-inline: 0px;
+    }
+    .inner .text2{
+        padding-block: 0px;
+    }
+    .rightV{
+        right: -70%;
+    }
+    .rightVv{
+        right: -55%;
+    }
+    .buttonC{
+        padding: 10px;
+    }
+    .medspace{
+        padding-block: 0px;
+    }
+    .navbar-nav .nav-link{
+        padding-block: 0px;
+    }
+    .navbar-nav .nav-item {
+        margin-bottom: 0px;
+    }
+    .nav-link{
+        font-size: 17px;
+        margin-inline: 20px;
+    }
+    .textfont{
+        font-size: 18px;
+    }
+
+    .largepadd{
+        padding-inline: 80px;
+    }
+    .size{
+        margin-top: 20px;
+        font-size: 30px;
+    }
+    ul li a,ul li{
+        font-size: 20px;
+    }
+    .buttonC{
+        width: 10%;
+    }
+}
+

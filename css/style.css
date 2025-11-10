@@ -1,0 +1,430 @@
+/* -----------------general prop------------------- */
+
+*,*::after,*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: Days_one;
+    src: url(../fonts/DaysOne-Regular.ttf);
+}
+
+::selection {
+    background-color:#c2f811 ; 
+    color: #000000; 
+}
+
+:root{
+    --main-color:#CBFE1C;
+}
+
+.our-games,.what-we-do,.our-team{
+    background-color: #0B0E13;
+}
+
+.contact-us{
+    background-color: #0E1420;
+}
+
+/* ------------navbar---------- */
+.navbar-brand,h1 span,span.trophy,.head-sections{
+    color: var(--main-color)
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+	color: var(--main-color);
+}
+
+
+.nav-logos span:hover,.nav-link:hover,.navbar-brand:hover{
+    color: var(--main-color);
+}
+
+.buttonC{
+    background-color: var(--main-color);
+    width: 100%;
+}
+
+.btn:hover {
+	background-color: var(--main-color);
+}
+
+.mynavcolor{
+    background-color: #101825;
+}
+
+.nav-link{
+    color: white;
+}
+
+.medspace{
+        padding-block: 20px;
+        margin-left: -10px;
+    }
+    .navbar-nav .nav-link{
+        padding-block: 15px;
+        margin-left: -10px;
+    }
+    .navbar-nav .nav-item {
+        margin-bottom: 0px;
+    }
+    .navbord{
+        margin-block: 20px;
+        border: gray 1px solid;
+    }
+
+/* ----------------------hero section------------------------ */
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.907)),url(../images-6/hero-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top: 55px;
+}
+
+header h1{
+    font-family: Days_one;
+}
+
+
+header p{
+    font-size: .8rem;
+}
+
+button.buttonh,.border-img{
+    border: var(--main-color) solid 4px;
+    color: var(--main-color);
+}
+
+.effect{
+    position: relative;
+    overflow: hidden;
+}
+
+.effect::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(240, 248, 255, 0.363);
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: all 0.2s;
+}
+
+.effect:hover::before{
+    left: 100%;
+}
+
+.badge{
+    width: 40%;
+    background-color: #0B0E13;
+}
+
+figcaption{
+    bottom: -20px;
+    left: -10px;
+}
+
+
+/* -------------------our games---------------------- */
+
+/* our games header */
+
+
+.headS p{
+    position: relative;
+}
+
+.af_be::after{
+    content: "";
+    width: 40px;
+    height: 3px;
+    background-image: linear-gradient(to right,#CBFE1C,rgba(0,0,0,0.2));
+    position: absolute;
+    top: 50%;
+    right: 22%;
+    border-radius: 20px;
+}
+
+.af_be::before{
+    content: "";
+    width: 40px;
+    height: 3px;
+    background-image: linear-gradient(to left,#CBFE1C,rgba(0,0,0,0.2));
+    position: absolute;
+    top: 50%;
+    left: 22%;
+    border-radius: 20px;
+}
+
+
+
+/* scale w bg linear grad */
+.image-scale:hover{
+    border: var(--main-color) solid 2px;
+}
+
+.image-scale img{
+    transition: transform 0.45s ease; 
+}
+
+.image-scale:hover img{
+    transform: scale(1.1);
+    
+}
+
+.layer{
+    pointer-events: none;
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.2),transparent,#CBFE1C);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.image-scale:hover .layer{
+    opacity: 1;
+}
+
+
+
+.image-scale::before {
+    position: absolute;
+    left: 25%;
+    bottom: 0%;
+    transform: translate(-50%, 130%);
+    font-weight: bold;
+    color: black;
+    z-index: 2;
+    transition: transform .45s ease;
+}
+
+.image-scale:hover::before {
+    transform: translate(-50%, -60%);
+}
+.game-1::before {
+    content: "Alien Companions";
+}
+.game-2::before {
+    content: "Cyber Run 2099";
+}
+.game-3::before {
+    content: "The Legend of Zelda";
+}
+.game-4::before {
+    content: "Aetheria Chronicles";
+}
+.game-5::before {
+    content: "Warfront Protocol";
+}
+.game-6::before {
+    content: "Shot Striker";
+}
+.game-7::before {
+    content: "Epic Gaming League";
+}
+.game-8::before {
+    content: "Barren alien worlds";
+}
+.game-9::before {
+    content: "Cloveland Quest";
+}
+
+
+.slider-badge{
+    font-size: 10px;
+    transform: translate(10%, -160%);
+    transition: all .45s ;
+}
+
+.image-scale:hover .slider-badge {
+    transform: translate(10%, 100%);
+}
+
+
+.carousel-indicators [data-bs-target] {
+    height: 30px;
+    border-radius: 50%;
+    text-indent: 0;
+    margin-bottom: -20px;
+    background-color: transparent;
+    border: gray 1px solid;
+    color: gray;
+}
+
+.carousel-indicators [data-bs-target]:hover{
+    border-color: #CBFE1C;
+    color: #CBFE1C;
+}
+
+
+/* ------------------------------what we do----------------------------------- */
+
+.my-card{
+    background-color: #1f1f1f;
+    border: #1e304e solid 1px;
+    
+}
+
+.my-card:hover{
+    border: #CBFE1C solid 1px;
+}
+
+span.cardbg{
+    color: #CBFE1C;
+    background-color: #263143;
+    width: 30%;
+}
+
+.my-card:hover span.cardbg{
+    color: #263143;
+    background-color: #CBFE1C;
+}
+
+.my-card::before,.my-card::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+
+.my-card::before {
+    top: 10px;
+    left: -50px; 
+    background-image: linear-gradient(45deg,transparent 50%,#CBFE1C 50%);
+    transform: rotate(270deg);
+}
+
+.my-card::after {
+    bottom: 10px;
+    right: -50px; 
+    background-image: linear-gradient(45deg,transparent 50%,#CBFE1C 50%);
+    transform: rotate(90deg);
+}
+
+
+.my-card:hover::before {
+    left: 15px;
+    opacity: 1;
+}
+
+.my-card:hover::after {
+    right: 15px;
+    opacity: 1;
+}
+
+.myborder{
+    height: 2px;
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.151),#CBFE1C,rgba(0, 0, 0, 0.167));
+    box-shadow: #c9fe1c26 1px 1px 2px;
+}
+
+.mybg{
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(to right,transparent,#c9fe1c4c,transparent);
+    box-shadow: #c9fe1c26 1px 1px 2px;
+}
+
+
+.image-row img {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+}
+
+.row1 {
+    padding: 20px;
+    animation: moveLeft 25s linear infinite;
+}
+
+.row2 {
+    animation: moveRight 25s linear infinite;
+}
+
+@keyframes moveLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes moveRight {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(50%);
+    }
+}
+
+
+.blackwhite::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    backdrop-filter:grayscale(100%);
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    transition: height 0.5s;
+}
+
+.blackwhite:hover::before{
+    height: 0;
+}
+
+
+.figtext{
+    left: 20px;
+    bottom: 10px;
+}
+
+.text-bw{
+    line-height: 0.5;
+    font-size: 13px;
+}
+
+.rightV{
+    right: -130px;
+    top: 5px;
+    transform: rotate(90deg);
+}
+
+.rightVv{
+    right: -115px;
+    top: 5px;
+    transform: rotate(90deg);
+}
+
+/* ------------------------contact us----------------------- */
+
+.mycard2, .myform{
+    background-color: #1E2939;
+}
+
+.logocolor,.mybtncolor{
+    background-color: #CBFE1C;
+}
+
+.mycardG{
+    background-image: linear-gradient(to right,#CBFE1C,rgb(0, 209, 143));
+}
+
+.outline:focus{
+    border: 3px solid #c2f811;
+    outline: none;
+}
+
+ul li a,ul li{
+    color: rgb(115, 115, 115);
+}
+
+ul li a:hover,ul li:hover{
+    cursor: pointer;
+    color: #c2f811;
+}
